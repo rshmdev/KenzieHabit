@@ -1,0 +1,60 @@
+:root{
+
+    /* Cors */
+
+    --cor-primary-1:65, 90, 243;
+    --cor-primary-2:65, 80, 210;
+    --cor-primary-3:215, 228, 251;
+
+    --cor-grey-1:33, 37, 41;
+    --cor-grey-2:52, 58, 64;
+    --cor-grey-3:173, 181, 189;
+    --cor-grey-4:233, 236, 239;
+    --cor-grey-5:241, 243, 245;
+    --cor-grey-6:248, 249, 250;
+    --cor-grey-7:161, 161, 161;
+
+    --cor-white-1:250, 250, 250;
+    --cor-white-2:255, 255, 255;
+
+    --cor-black-1:0, 0, 0;
+
+    --cor-sucess:86, 207, 142;
+    --cor-error-1:230, 68, 69;
+    --cor-error-2:240, 56, 57;
+
+    /* Tipografia */
+
+    --font-inter:'Inter', sans-serif;
+
+    /* titulo */
+
+    --font-title-1-tamanho:40px;
+
+    --font-title-2-tamanho:28px;
+
+    --font-title-3-tamanho:24px;
+
+    --font-title-4-tamanho:22px;
+
+    --font-title-5-tamanho:20px;
+
+    --font-title-6-tamanho:16px;
+
+    --font-title-grossura:600;
+
+    /* texto */
+
+    --font-text-1-tamanho:18px;
+    --font-text-1-4-grossura:400;
+    --font-text-1-5-grossura:500;
+
+    --font-text-2-tamanho:16px;
+    --font-text-2-4-grossura:400;
+    --font-text-2-5-grossura:500;
+
+    --font-text-3-tamanho:14px;
+    --font-text-3-4-grossura:400;
+    --font-text-3-5-grossura:500;
+    --font-text-3-6-grossura:600;
+}   

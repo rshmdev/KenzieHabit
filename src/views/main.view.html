@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/index/criarHabito.css"/>
+    <link rel="stylesheet" href="../css/index/excluirHabit.css">
+    <link rel="stylesheet" href="../css/index/editarHabito.css">
+    <link rel="stylesheet" href="../css/index/editarPerfil.css">
+    <link rel="stylesheet" href="../css/index/main.css">
+    <link rel="stylesheet" href="../css/index/dropDown.css">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kenzie Habit</title>
+    <script defer type="module" src="../js/scripts/main.js"></script>
+  </head>
+  <body>
+    
+    <header class="cabecalho">
+
+      <h1 class="cabecalho__titulo">KenzieHabit</h1>
+      <div id="dropdown">
+        <button id="btnEditarPerfil" class="cabecalho__botaoPerfil">
+          <img class="botaoPerfil__imagem" src="https://static1.conquistesuavida.com.br/articles//4/56/84/@/18404-gente-que-da-prioridade-aos-sentimentos-article_gallery-2.jpg" alt="Homem">
+        </button>
+        
+        <div id="dropdownContent">
+          <img id="imgPolygon" class="imgPolygon" src="../assets/img/Polygon.png" alt="Polygon" >
+          <img id="imgDrop" class="imgLogout" src="../assets/img/logout.png" alt="logout">
+          <img id="imgDrop" class="imgPerfil" src="../assets/img/userDropDown.png" alt="user">
+          <button id="textEditPerfil" class="text">Editar Perfil</button>
+          <button id="textClose" class="text">Sair do app</button>
+        </div>
+        
+      </div>
+    
+    </header>
+
+    <div class="perfil">
+
+      <figure class="perfil__blocoImagem">
+        <img class="blocoImagem__imagem" src="https://static1.conquistesuavida.com.br/articles//4/56/84/@/18404-gente-que-da-prioridade-aos-sentimentos-article_gallery-2.jpg" alt="Homem">
+      </figure>
+
+      <h1 class="perfil__nome">Julia Silva Camargo</h1>
+
+    </div>
+
+    <div class="funcoesTabela">
+      <h1 class="funcoesTabela__categoria">Tarefas</h1>
+
+      <nav class="funcoesTabela__navegacao">
+        <button class="navegacao__todos">Todos</button>
+        <button class="navegacao__concluidos">Concluidos</button>
+        <button class="navegacao__criar">Criar</button>
+      </nav>
+
+    </div>
+
+    <div class="borda">
+      <table class="tabela">
+        <thead class="tabela__head">
+          <tr class="head__bloco">
+            <th class="geralHead bloco__status">Status</th>
+            <th class="geralHead bloco__titulo">Titulo</th>
+            <th class="geralHead bloco__descricao">Descrição</th>
+            <th class="geralHead bloco__categoria">Categoria</th>
+            <th class="geralHead bloco__editar">Editar</th>
+          </tr>
+        </thead>
+  
+        <tbody class="tabela__body">
+  
+        </tbody>
+      </table>
+    </div>
+
+    <button class="carregarMais">Carregar mais</button>
+    
+    <div class="fundo-background">
+
+      <div class="modalExcluir">
+
+        <div class="modalExcluir__cabecalhoExcluir">
+          <h2 class="cabecalhoExcluir__titulo">Excluir Hábito</h2>
+          <button class="cabecalhoExcluir__fechar">
+            <img class="fechar__imagem" src="./src/assets/img/fechar.png" alt="">
+          </button>
+        </div>
+  
+        <div class="modalExcluir__blocoInformacoes"> 
+          <p class="blocoInformacoes__descricao-primaria">Certeza que deseja excluir este hábito?</p>
+          <span class="blocoInformacoes__descricao-secundaria">Após executar essa ação não será possivel desfazer</span>
+        </div>
+  
+        <nav class="modalExcluir__navegacao">
+          <button class="navegacao__cancelar">Cancelar</button>
+          <button class="navegacao__excluir">Sim, excluir este hábito</button>
+        </nav>
+  
+      </div>
+
+    </div>
+
+    <div id="backgroundCriarHabit">
+      <form id="criarHabitoForm">
+        <h4 id="TextHabito">Criar hábito</h4>
+        <h3 id="exit">X</h3>
+        <label id="textTitulo" for="formLabelTitulo">Título</label>
+        <input type="text" id="formLabelTitulo" placeholder="Digitar título" />
+        <label id="textDescricao" for="formLabelDescricao">Descrição</label>
+        <input
+          type="text"
+          id="formLabelDescricao"
+          placeholder="Digitar descrição"
+        />
+        <label id="textCategoria" for="formLabelCategoria">Categoria</label>
+        <select id="formLabelCategoria" name="categoria">
+          <option value="Defaut">Selecionar categoria</option>
+          <option value="Casa">🏠 Casa</option>
+          <option value="Estudos">📚 Estudo</option>
+          <option value="Lazer">⛱️ Lazer</option>
+          <option value="Trabalho">📊 Trabalho</option>
+          <option value="Saude">💜 Saude</option>
+        </select>
+        <input type="submit" id="btnForm" value="Inserir" />
+      </form>
+    </div>
+
+    <div id="modalEditar">
+      <div id="container">
+        <div id="modal__board">
+          <div id="modal__header">
+            <span>Editar Perfil</span>
+            <button type="button">X</button>
+        </div>
+        <form action="" id="editarPerfil">
+  
+        <div id="modal_form_divs">
+          <label id="textNome" for="formEditarNome">Nome</label>
+          <input type="text" id="formEditarNome"  name="usr_name"  placeholder="Júlia Silva Camargo">
+        </div>
+       <div id="modal_form_divs">
+        <label id="textImagem" for="formLabelFoto">URL da imagem do perfil</label>
+        <input type="url" id="formEditarFoto"  name="usr_image"  placeholder="https://imagem.com.br">
+       </div>
+        <div id="botaoInserir">
+          <input type="submit" id="btnEditar" value="Salvar alterações">
+        </div>
+  
+      </form>
+    </div>
+    </div>
+    </div>
+
+    <div class="modal">
+      <div class="container">
+          <div class="modal__board">
+              <div class="modal__header">
+                  <span>Editar hábito</span>
+                  <button type="button">X</button>
+              </div>
+              <form class="modal__form">
+                  <div class="modal__form__divs">
+                      <label for="título">Título</label>
+                      <input type="text" name="habit_title" id="título">
+                  </div>
+
+                  <div class="modal__form__divs">
+                      <label for="descrição">Descrição</label>
+                      <input type="text" name="habit_description" id="descrição">
+                  </div>
+
+                  <div class="modal__form__divs">
+                      <label for="categoria">Categoria</label>
+                      <select name="habit_category" id="categoria">
+                          <option value="Selecionar">Selecionar categoria</option>
+                          <option value="casa">🏠 casa</option>
+                          <option value="estudos">📚 estudos</option>
+                          <option value="lazer">⛱️ lazer</option>
+                          <option value="trabalho">📊 trabalho</option>
+                          <option value="saude">💜 saúde</option>
+                      </select>
+                  </div>
+
+                  <div class="modal__checkbox">
+                      <label for="status">Status</label>
+                      <input type="checkbox" name="habit_status" id="status">
+                  </div>
+
+                  <div class="modal__buttons">
+                      <button type="button" id="excluir">Excluir</button>
+                      <button type="submit" id="salvar">Salvar alterações</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+
+
+
+  </body>
+</html>
+

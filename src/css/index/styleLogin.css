@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto{
+    width: 542px;
+    height: 484px;
+    background-color: #4150D2;
+    border-radius: 10px 0px 0px 10px;
+}
+.dados{
+    width: 542px;
+    height: 484px;  
+    box-shadow: 0px 4px 40px -10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+#tituloLogin{
+    font-size: 20px;
+    color: #212529
+}
+
+#mail, #password{
+    width: 376px;
+    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    box-sizing: border-box;
+    background-color: #F1F3F5;
+    border: 2px solid transparent;
+    transition: all 0.4s;
+    outline: none;
+    size: 16px;
+    padding-left: 18px;
+    border-radius: 4px;
+}  
+
+#emailEstatico{
+    font-size: 14px;
+    color: #343A40;
+    margin: 47px 0px 10px 0px;
+}
+
+#senhaEstatica{
+    font-size: 14px;
+    color: #343A40;
+    margin: 27px 0px 10px 0px;
+}
+
+#mail:hover, #mail:focus{
+    border: solid 2px;
+    border-color: #415AF3;
+}
+#password:hover, #password:focus{
+    border: solid 2px;
+    border-color: #415AF3;
+}
+
+
+#botaoLogin{
+    width: 376px;
+    height: 40px;
+    color: white;
+    background-color: #415AF3;
+    border: none;
+    margin: 16px 0px 0px 0px;
+    border-radius: 4px;
+    size: 16px;
+    font-family: var(--font-inter);
+    font-weight: 600;
+}
+
+#titulo{
+    font-size: 28px;
+    margin: 120px 0px 60px 50px;
+    color: white;
+}
+
+#segundaLinha{
+    font-size: 24px;
+    margin: 0px 0px 0px 50px;
+    color: white;
+}
+
+#terceiraLinha{
+    font-size: 16px;
+    margin: 25px 0px 0px 50px;
+    color: #E9ECEF;
+}
+
+@media (max-width: 800px){
+
+    .texto{
+        display: none;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dados{
+        width: 300px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #tituloLogin{
+        font-size: 15px;
+        color: #212529;
+        text-align: center;
+    }
+    
+    #mail{
+        width: 200px;
+        height: 20px;
+        background-color: #F1F3F5;
+        border: 2px solid transparent;
+        transition: all 0.4s;
+        outline: none;
+       
+    }
+    #password{
+        width: 200px;
+        height: 20px;
+        background-color: #F1F3F5;
+        border: 2px solid transparent;
+        transition: all 0.4s; 
+        outline: none; 
+    }
+    #emailEstatico{
+        font-size: 12px;
+        color: #343A40;
+        margin: 24px 0px 3px 0px;
+    }
+    
+    #senhaEstatica{
+        font-size: 12px;
+        color: #343A40;
+        margin: 0px 0px 3px 0px;
+    }
+    #botaoLogin{
+        width: 210px;
+        height: 30px;
+        color: white;
+        background-color: #415AF3;
+        border: none;
+        margin: 16px 0px 0px 0px;
+    }
+
+}
